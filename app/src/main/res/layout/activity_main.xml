@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="110">
+
+    <include layout="@layout/player_bar"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50">
+
+        <TextView
+            android:id="@+id/green_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:background="@color/colorGreen"
+            tools:ignore="NestedWeights"
+            android:onClick="onClickTextView"/>
+
+        <TextView
+            android:id="@+id/red_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:background="@color/colorRed"
+            android:onClick="onClickTextView"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50">
+        <TextView
+            android:id="@+id/yellow_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:background="@color/colorYellow"
+            tools:ignore="NestedWeights"
+            android:onClick="onClickTextView"/>
+
+        <TextView
+            android:id="@+id/blue_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:background="@color/colorBlue"
+            android:onClick="onClickTextView"/>
+    </LinearLayout>
+
+</LinearLayout>

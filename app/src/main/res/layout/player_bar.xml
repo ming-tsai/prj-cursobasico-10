@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:baselineAligned="false"
+    android:background="@color/colorPrimary"
+    android:weightSum="10"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="left"
+        tools:ignore="NestedWeights,RtlHardcoded">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/player_1"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/my_progress_bar_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="right"
+        tools:ignore="RtlHardcoded">
+
+        <ProgressBar
+            android:id="@+id/my_progress_bar_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/player_2"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
